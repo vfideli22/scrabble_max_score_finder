@@ -1,6 +1,6 @@
 # scrabble_max_score_finder
 Problem arose post-D&D, where we were intrigued about the optimal placement of our character names on a Scrabble board.
-(Just for fun :))
+(So I coded this just for fun :))
 
 **Problem:**
 Who gains the most scrabble points if you can place your name anywhere on the board? And where would this be?
