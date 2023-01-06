@@ -19,8 +19,8 @@ Fig 3) Each text array shows the number of points your name would achieve if you
 **Discussion:**
 - Kascorin is, of course, the *best* name :innocent:
 - A good point earlier was raised: "Isn't the triple word just the best in all cases?" 
---- Here we see that interestingly, Orville and Dorothy make use of the two double words on either end to trump the triple word. 
---- Furthermore, Ozman and Kyvir's high scores only works in this specific triple word since the Z and Y were pretty clutch, latching onto the double letter!
+  - Here we see that interestingly, Orville and Dorothy make use of the two double words on either end to trump the triple word. 
+  - Furthermore, Ozman and Kyvir's high scores only works in this specific triple word since the Z and Y were pretty clutch, latching onto the double letter!
 - This is acc super cool and I'm high-key happy I've done this hahaha
 
 **Methods:**
