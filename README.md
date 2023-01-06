@@ -11,9 +11,14 @@ Who gains the most scrabble points if you can place your name anywhere on the bo
 - Top half of the board is symmetrical with bottom half, so search was restricted to the first half of the rows, including the centre (start) row
 
 **Results:**
+
 Fig 1) First bit of text is a summary on the number of points each name scores
+
 Fig 2) The images show where on the board would be best for your name
+
 Fig 3) Each text array shows the number of points your name would achieve if you placed your name horizontally, start from the top left corner
+
+Fig 4) Heatmap showing scrabble board top half layout. Numbers show special tiles of board (0, 1, 2, 3, 4: normal, double letter, triple letter, double word, triple word). Each cell indicates how many points the name would get if it started on that square and was placed horizontally. Darker colour means more points.
 
 **Discussion:**
 - Kascorin is, of course, the *best* name :innocent:
