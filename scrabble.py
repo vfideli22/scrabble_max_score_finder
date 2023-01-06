@@ -8,13 +8,15 @@ Description
 -----------
 Trying to place a given word on a Scrabble board, maximising number of points.
 - Inputs word to be searched
-- Chooses vertical or horizontal
-- Outputs location and 
+- Outputs max score the word can get
+- Outputs location 
 
 """
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-# Scrabble board setup
+### Scrabble board setup
 """"
 0 = blank
 1 = double letter
@@ -23,7 +25,7 @@ import numpy as np
 4 = triple word
 """
 board = np.array([
-    [4, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 4],
+    [4, 0, 0, 1, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 4],
     [0, 3, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 3, 0],
     [0, 0, 3, 0, 0, 0, 1, 0, 1, 0, 0, 0, 3, 0, 0],
     [1, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 1],
@@ -37,7 +39,7 @@ board = np.array([
     [1, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 1],
     [0, 0, 3, 0, 0, 0, 1, 0, 1, 0, 0, 0, 3, 0, 0],
     [0, 3, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 3, 0],
-    [4, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 4]
+    [4, 0, 0, 1, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 4]
     ])
 
 # Defining the number of points each letter is worth
@@ -56,6 +58,7 @@ points_reference = {letter:point for point, letters in points_reversed.items() f
 # for point, letters in points_reversed.items():
 #     for letter in letters:
 #         print(point, letter)
+
 
 ### Defining functions 
 def how_many_points(word, row, column):
@@ -139,8 +142,20 @@ def scan(word):
 # Featuring some D&D characters ;)
 names = ["kascorin", "orville", "kyvir", "dorothy", "ozman"]
 
+# Iterating through list of names, running functions, graphing
 for name in names:
     name_caps = name.upper()
     point, score_map = scan(name_caps)
     print(f"{name}: {point}")
     print(score_map)    # Comment out if you don't want to see the score map :)
+    
+    # Filling in the heatmap completely
+    zeros = np.zeros((8, len(name)-1))
+    score_map_plot = np.concatenate((score_map, zeros), axis=1)
+    annotated_board = board[:8, :]
+    
+    # Graphing the heatmaps
+    ax = sns.heatmap(score_map_plot, annot=annotated_board, linewidth=0.5, cmap='Blues',\
+                     cbar_kws={'label':'points'})
+    ax.set_title(name)
+    plt.show()
