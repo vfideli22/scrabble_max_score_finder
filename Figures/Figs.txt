@@ -1,0 +1,9 @@
+# Figure 1
+
+kascorin: 153
+orville: 42
+kyvir: 60
+dorothy: 56
+ozman: 78
+
+# Figure 2
