@@ -1,6 +1,6 @@
 # scrabble_max_score_finder
 Problem arose post-D&D, where we were intrigued about the optimal placement of our character names on a Scrabble board.
-
+(PS This is just for fun :))
 
 **Problem:**
 Who gains the most scrabble points if you can place your name anywhere on the board? And where would this be?
@@ -11,7 +11,6 @@ Who gains the most scrabble points if you can place your name anywhere on the bo
 - Top half of the board is symmetrical with bottom half, so search was restricted to the first half of the rows, including the centre (start) row
 
 **Results:**
-- See below (spoilered so you read this first hehe)
 Fig 1) First bit of text is a summary on the number of points each name scores
 Fig 2) The images show where on the board would be best for your name
 Fig 3) Each text array shows the number of points your name would achieve if you placed your name horizontally, start from the top left corner
