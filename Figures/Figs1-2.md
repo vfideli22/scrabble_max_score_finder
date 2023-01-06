@@ -1,4 +1,6 @@
 ### Figure 1
+Summary of the max number of points each name scores
+
 ```
 kascorin: 153
 orville: 42
@@ -8,6 +10,8 @@ ozman: 78
 ```
 
 ### Figure 2
+Each text array shows the number of points your name would achieve if you placed your name horizontally, 
+starting from the top left corner.
 ```
 kascorin: 153
 [[153  45  45  57  45  45  45 135]
